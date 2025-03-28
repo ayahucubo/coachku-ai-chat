@@ -29,9 +29,9 @@ const Login = () => {
     <div className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-coach-light p-4">
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle className="text-2xl text-center text-coach-dark">Login to CoachKu</CardTitle>
+          <CardTitle className="text-2xl text-center text-coach-dark">Masuk ke CoachKu</CardTitle>
           <CardDescription className="text-center">
-            Access your personal AI coach and continue your coaching journey
+            Akses coach AI pribadi Anda dan lanjutkan perjalanan coaching Anda
           </CardDescription>
         </CardHeader>
         <CardContent className="space-y-6">
@@ -40,7 +40,7 @@ const Login = () => {
               <span className="text-white text-2xl font-bold">C</span>
             </div>
             <h2 className="text-xl font-semibold text-gray-800">CoachKu</h2>
-            <p className="text-sm text-gray-500">Your AI Coaching Assistant</p>
+            <p className="text-sm text-gray-500">Asisten AI Coaching Anda</p>
           </div>
           
           <div className="pt-4">
@@ -52,16 +52,16 @@ const Login = () => {
             >
               <img 
                 src="https://developers.google.com/identity/images/g-logo.png" 
-                alt="Google logo" 
+                alt="Logo Google" 
                 className="w-5 h-5 mr-2" 
               />
-              Sign in with Google
+              Masuk dengan Google
             </Button>
           </div>
         </CardContent>
         <CardFooter className="flex justify-center">
           <p className="text-xs text-gray-500">
-            By signing in, you agree to our Terms of Service and Privacy Policy
+            Dengan masuk, Anda menyetujui Ketentuan Layanan dan Kebijakan Privasi kami
           </p>
         </CardFooter>
       </Card>

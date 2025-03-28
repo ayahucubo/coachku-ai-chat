@@ -54,14 +54,14 @@ export const useGoogleLogin = () => {
       navigate('/chat');
       
       toast({
-        title: 'Login successful',
-        description: 'Welcome to CoachKu!',
+        title: 'Login berhasil',
+        description: 'Selamat datang di CoachKu!',
       });
     } catch (error) {
       console.error('Google login error:', error);
       toast({
-        title: 'Login failed',
-        description: 'Unable to authenticate with Google. Please try again.',
+        title: 'Login gagal',
+        description: 'Tidak dapat mengautentikasi dengan Google. Silakan coba lagi.',
         variant: 'destructive',
       });
     }
@@ -70,7 +70,9 @@ export const useGoogleLogin = () => {
   const initGoogleLogin = useCallback(() => {
     if (!window.google || !isGoogleScriptLoaded) return;
 
-    const googleClientId = '1069785198379-f07m1d3e6qv0c3ocm8o3ko3f6upsh5gg.apps.googleusercontent.com'; // Placeholder - replace with actual client ID in production
+    // Use an actual Google OAuth Client ID - this is just a placeholder
+    // In production, use your actual client ID
+    const googleClientId = '593421853175-dnebje2g68c6fjphqggtjf8clg0jr6hd.apps.googleusercontent.com';
     
     window.google.accounts.id.initialize({
       client_id: googleClientId,
@@ -83,6 +85,8 @@ export const useGoogleLogin = () => {
         theme: 'outline',
         size: 'large',
         width: buttonElement.offsetWidth,
+        text: 'continue_with',
+        locale: 'id_ID', // Set locale to Indonesian
       });
     }
   }, [isGoogleScriptLoaded, handleCredentialResponse]);
