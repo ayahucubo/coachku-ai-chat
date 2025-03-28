@@ -70,9 +70,8 @@ export const useGoogleLogin = () => {
   const initGoogleLogin = useCallback(() => {
     if (!window.google || !isGoogleScriptLoaded) return;
 
-    // Use an actual Google OAuth Client ID - this is just a placeholder
-    // In production, use your actual client ID
-    const googleClientId = '593421853175-dnebje2g68c6fjphqggtjf8clg0jr6hd.apps.googleusercontent.com';
+    // Menggunakan Client ID yang diberikan oleh user
+    const googleClientId = '611205845872-mf4sta5gkr7ahlqucbfoosnmuo8n8u9m.apps.googleusercontent.com';
     
     window.google.accounts.id.initialize({
       client_id: googleClientId,
